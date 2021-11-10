@@ -465,7 +465,7 @@ resource "aws_lb" "zyuniversitylb" {
   security_groups    = [aws_security_group.alb-security-group.id]
   subnets            = [aws_subnet.public-subnet-1.id, aws_subnet.public-subnet-2.id]
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
 
   tags          = {
